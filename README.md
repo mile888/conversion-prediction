@@ -1,17 +1,10 @@
-# Simple Image Retrieval
-There are millions of images uploaded to the Internet every hour. One of the arising challenges
-that has emerged in the last decade is the search system around this vast set of publicly
-available images. It is relatively straightforward to find the images if they have labels or
-metadata attached to them, but what can we do when they don’t? One possibility would be to to
-query the dataset with the provided image and retrieve the most similar ones. The objective of
-this assignment is to build a simple image retrieval engine
+# Probability conversion prediction
+Over the past decade, digital marketing has seen significant growth and development. However, the accuracy of prediction technologies in this field has often fallen short, particularly when it comes to predicting conversions. Conversion prediction remains a challenging task for many marketing professionals. In this task, we leverage a dataset that includes the content of landing pages, the number of impressions made by users, and user features, as well as the number of conversions made by users after seeing advertisement on impressions. 
+
+The goal of this task is to accurately predict the probability of a user making a conversion for each impression of a certain advertising banner. To solve this task, we consider this problem as a classification task determined by a conversion rate. As a result, we consider the probability outputs of the classifier. We assume that the results of the conversion probability are more accurate for the classifier with a better F1-score. 
 
 ## Task
-The main goal of the Image retrieval engine would be to return N most similar images from the
-dataset with respect to the provided input image.
-- [x] **Image vectorizer** 
-- [x] **Image similarity function** 
-- [x] **Create collage image with top N similar images** 
+The goal of this task is to accurately predict the probability of a user making a conversion for each impression of a certain advertising banner. To solve this task, we consider this problem as a classification task determined by a conversion rate. As a result, we consider the probability outputs of the classifier. We assume that the results of the conversion probability are more accurate for the classifier with a better F1-score. 
 
 ## Installation
 Clone this repository:
