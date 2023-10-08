@@ -114,7 +114,7 @@ To validate the results of the good accuracy of the conversation probability pre
 
 | k best features| 2 | 4 | 8 | 10 | 15 | All |
 |----------|----------|----------|----------|----------|----------|----------|
-| LR | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
+| LR | 0.76/0.06, trh = 0.4 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
 | KNN | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
 | RF | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
 | XGB | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
