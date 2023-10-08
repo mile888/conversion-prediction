@@ -85,7 +85,7 @@ chose the mode:
 - [x] The **save_models** folder consists of the saved models and their parameter files.
 
 
-## Discussion and Results
+## Pipeline
 - [x] Data engineering task is done in `main.ipynb`. Important moments during the data engineering task were:
 
 1. Feature `offer_id` has a lot of NaN values. Accordingly, we did not consider this feature at all.
@@ -100,7 +100,7 @@ During creating `cp` column, it was noticed that in same cases number of convers
 
 6. In the end, we create cleaned and undersampled train and test datasets
 
-- [x] 
+- [x] Feature engineering task is done in the `mrmr.py` file. The idea was to implement the so-called `maximum relevance minimum redundancy` technique, where we eliminate redundant features with a high correlation between other features, and take features that have the best correlation with label output. For the `minimum redundancy`, we used `pearson corelation`, while for the `maximum relevance`, we applied the `mutual information` technique.
 
 
 
