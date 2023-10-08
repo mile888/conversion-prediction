@@ -86,7 +86,7 @@ chose the mode:
 
 
 ## Pipeline
-- [x] Data engineering task is done in `main.ipynb`. Important moments during the data engineering task were:
+- [x] **Data engineering** task is done in `main.ipynb`. Important moments during the data engineering task were:
 
 1. Feature `offer_id` has a lot of NaN values. Accordingly, we did not consider this feature at all.
 2. Feature `geo` also has several NaN values, thus we just delete these rows. In this way, we did not influence the dataset, since rows with `geo` NaN values do not have any conversions.
@@ -100,9 +100,22 @@ During creating `cp` column, it was noticed that in same cases number of convers
 
 6. In the end, we create cleaned and undersampled train and test datasets
 
-- [x] Feature engineering task is done in the `mrmr.py` file. The idea was to implement the so-called `maximum relevance minimum redundancy` technique, where we eliminate redundant features with a high correlation between other features, and take features that have the best correlation with label output. For the `minimum redundancy`, we used `pearson corelation`, while for the `maximum relevance`, we applied the `mutual information` technique.
+- [x] **Feature engineering** task is done in the `mrmr.py` file. The idea was to implement the so-called `maximum relevance minimum redundancy` technique, where we eliminate redundant features with a high correlation between other features, and take features that have the best correlation with label output. For the `minimum redundancy`, we used `pearson corelation`, while for the `maximum relevance`, we applied the `mutual information` technique.
 
+- [x] **Classifiers** are built in the `utils.py` file. In this task we consider 4 different classifiers:
+1. Logistic Regression (LR)
+2. k-Nearest Neighbour (KNN)
+3. Random Forest (RF)
+4. Extreme Gradiant Boosting (XGB)
+During fitting these classifiers Bayesian optimization is applied to tune the hyperparameters of each classifier.
 
+## Results and Discussion
+To validate the results of the good accuracy of the conversation probability prediction, we consider F1-score as the metric of the goodnes of the calssifier. F1-score is a harmonic mean of the precission and eracall, and in this case we would like to the best classifiers has good bothe precission and recall. The results are presented in table bellow for each classifier with optimal treshold:
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |
+| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
 
 
 
