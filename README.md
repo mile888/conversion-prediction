@@ -1,5 +1,5 @@
 # Probability conversion prediction
-Over the past decade, digital marketing has seen significant growth and development. However, the accuracy of prediction technologies in this field has often fallen short, particularly when it comes to predicting conversions. Conversion prediction remains a challenging task for many marketing professionals. In this task, we leverage a dataset that includes the content of landing pages, the number of impressions made by users, and user features, as well as the number of conversions made by users after seeing advertisement on impressions. 
+Over the past decade, digital marketing has seen significant growth and development. However, the accuracy of prediction technologies in this field has often fallen short, particularly when it comes to predicting conversions. Conversion prediction remains a challenging task for many marketing professionals. In this task, we leverage a dataset that includes the content of landing pages, the number of impressions made by users, user features, as well as the number of conversions made by users after seeing advertisement on impressions. 
 
 ## Task
 The goal of this task is to accurately predict the probability of a user making a conversion for each impression of a certain advertising banner. To solve this task, we consider this problem as a classification task determined by a conversion rate. As a result, we consider the probability outputs of the classifier. We assume that the results of the conversion probability are more accurate for the classifier with a better F1-score. 
@@ -57,6 +57,43 @@ project_root/
 ├── README.md
 └── requirements.txt
 ```
+- [x] **To run this program**, you should call in the terminal:
+```
+python main.py
+```
+- [x] This repository contains configuration file `config.yaml` where you can 
+chose the mode: 
+1. `train` - it means to train classifier on `train.csv` dataset and validate on `test.csv` dataset.
+2. `predict` - it means used trained models and directly work with raw dataset, for example `ds_homework_sample.csv` in this case.
+
+Accordingly you can config the roots of the datasets and chose the next options:
+1. `train.csv` dataset - (e.g. `dataset_root_train: "datasets/train.csv"`)
+2. `test.csv` dataset - (e.g. `dataset_root_test: "datasets/test.csv"`)
+3. model (classifier) - (e.g. `model: "RF"`)
+4. k best features - (e.g. `k_best_features: 2`)
+5. 
+
+For example: 
+- the root of the image dataset is:
+```
+root_images: "dataset/image-db/"
+```
+- query image is located in:
+```
+root_query_image: "dataset/test-cases/cat.jpg"
+```
+and the name of the collage image is:
+```
+save_figure_name: "cat.jpg"
+```
+
+
+
+
+
+
+
+
 
 
 
