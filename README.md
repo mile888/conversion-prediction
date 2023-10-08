@@ -66,7 +66,7 @@ chose the mode:
 1. `train` - it means to train classifier on `train.csv` dataset and validate on `test.csv` dataset.
 2. `predict` - it means used trained models and directly work with raw dataset, for example `ds_homework_sample.csv` in this case.
 
-Accordingly you can config the roots of the datasets and chose the next options:
+- Accordingly you can config the roots of the datasets and chose the next options:
 1. `train.csv` dataset - (e.g. `dataset_root_train: "datasets/train.csv"`)
 2. `test.csv` dataset - (e.g. `dataset_root_test: "datasets/test.csv"`)
 3. model (classifier) - (e.g. `model: "RF"`)
