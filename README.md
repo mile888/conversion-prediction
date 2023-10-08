@@ -113,7 +113,7 @@ During fitting these classifiers Bayesian optimization is applied to tune the hy
 To validate the results of the good accuracy of the conversation probability prediction, we consider F1-score as the metric of the goodnes of the calssifier. F1-score is a harmonic mean of the precission and eracall, and in this case we would like to the best classifiers has good bothe precission and recall. The results are presented in table bellow for each classifier with optimal treshold:
 
 | k best features| 2 | 4 | 8 | 10 | 15 | All |
-|----------|----------|----------|
+|----------|----------|----------|----------|----------|----------|----------|
 | LR | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
 | KNN | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
 | RF | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
