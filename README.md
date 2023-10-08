@@ -71,7 +71,25 @@ chose the mode:
 2. `test.csv` dataset - (e.g. `dataset_root_test: "datasets/test.csv"`)
 3. model (classifier) - (e.g. `model: "RF"`)
 4. k best features - (e.g. `k_best_features: 2`)
-5. 
+5. number of hyperparameters bayesian optimization calls - (e.g. `n_calls: 30`)
+6. model_treshold - (e.g. `model_treshold: 0.4`)
+7. `ds_homework_sample.csv` - (e.g. `data: "datasets/ds_homework_sample.csv"`)
+8. the nuber of index row from raw dataset - (e.g. `index_row: 1`)
+
+- [x] `main.ipynb` nootebook is used for feature engineering and creating cleaned `train.csv` and `test.csv` datasets
+
+- [x] The **source** folder contains all the important files for solving the tasks of this assignment.
+- `utils.py` contains the code for fitting and optimizing classifiers..
+- `mrmr.py` contains the code of the so-called minimum redundancy maximum relevance feature engineering approach.
+- `train_validate.py` contains pipeline for solving train\validation task. 
+- `predict.py` contains a pipeline for solving this task from the raw dataset.
+
+- [x] The **save_models** consists of the saved models and their parameter files.
+
+
+
+
+
 
 For example: 
 - the root of the image dataset is:
