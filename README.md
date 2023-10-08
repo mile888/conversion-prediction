@@ -7,13 +7,22 @@ The goal of this task is to accurately predict the probability of a user making 
 ## Installation
 Clone this repository:
 ```
-git clone https://github.com/mile888/simple-image-retrieval.git
+git clone https://github.com/mile888/conversion-prediction.git
 ```
 The required packages can be installed via standard Python package manager:
 ```
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+## Dataset
+The datasets for this task are available [here](https://drive.google.com/drive/folders/1qOVe9A5fX5D5vNGIuDvlIGCT0mq-PbGF).
+
+The dataset consists of three files:
+1. **ds_homework_sample.csv** - contains a random sample of the work of an advertising network with approximately 100 sites over two weeks. Each line represents data from the conversions and impressions metrics aggregated over the rest attributes. 
+2. **train.csv** - is a cleaned `ds_homework_sample.csv` file prepared for classifier's training.
+3. **test.csv** - is a cleaned `ds_homework_sample.csv` file prepared for classifier's validation.
+
 
 **NOTE**:
 In case that `requirements.txt` gives an error during installation (something like this **ERROR: No matching distribution found for torch==2.0.1+cu117**), install it manually as:
