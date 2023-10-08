@@ -24,6 +24,48 @@ The dataset consists of three files:
 3. **test.csv** - is a cleaned `ds_homework_sample.csv` file prepared for classifier's validation.
 
 
+## Guideline
+Tree of the project:
+```plaintext
+project_root/
+├── .github/workflows/ 
+│   └── main.yaml
+├── figures/
+│   ├── best_features.png
+│   ├── full_plot.png
+│   └── undersample_plot.png  
+├── save_models/
+│   ├── best_features.pickle
+│   ├── knn_model.pickle
+│   ├── knn_param.pickle
+│   ├── lr_model.pickle
+│   ├── lr_param.pickle
+│   ├── rf_model.pickle
+│   ├── rf_param.pickle
+│   ├── xgb_model.pickle
+│   └── xgb_param.pickle
+├── source/
+│   ├── __init__.py
+│   ├── mrmr.py
+│   ├── predict.py
+│   ├── train_validate.py
+│   └── utils.py
+├── .gitignore 
+├── config.yaml
+├── main.ipynb
+├── main.py
+├── README.md
+└── requirements.txt
+```
+
+
+
+
+
+
+
+
+
 **NOTE**:
 In case that `requirements.txt` gives an error during installation (something like this **ERROR: No matching distribution found for torch==2.0.1+cu117**), install it manually as:
 ```
