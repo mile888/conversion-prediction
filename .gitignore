@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+__pycache__/
+__pycache__
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+datasets/
+.env
+
+# Noutbooks for testing
+train.ipynb

@@ -1,0 +1,14 @@
+# train_validate.py
+dataset_root_train: "datasets/train.csv"
+dataset_root_test: "datasets/test.csv"
+model: "RF" # {LR, KNN, RF or XGB}
+k_best_features: 2 
+n_calls: 30
+model_treshold: 0.4
+
+# predict.py
+data: "datasets/ds_homework_sample.csv"
+index_row: 1
+
+# chose mode
+mode: "train" # {train or predict}
