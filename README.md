@@ -116,8 +116,10 @@ To validate the results of the good accuracy of the conversation probability pre
 |----------|----------|----------|----------|----------|----------|----------|
 | LR | 0.76/0.06, trh=0.4 | 0.64/0.07, trh=0.4 | 0.66/0.09, trh=0.4 | 0.68/0.10, trh=0.4 | 0.69/0.10, trh=0.4 | 0.70/0.10, trh=0.4 |
 | KNN | 0.80/0.19, trh=0.4  | 0.80/0.16, trh=0.4 | 0.80/0.15, trh=0.4 | 0.71/0.12, trh=0.4 | 0.80/0.15, trh=0.4 | 0.80/0.15, trh=0.4 |
-| RF | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
-| XGB | Row 1, Col 2 | Row 1, Col 3 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 | Row 1, Col 2 |
+| RF | 0.96/0.35, trh=0.7 | 0.96/0.32, trh=0.7 | 0.98/0.32, trh=0.7 | 0.98/0.27, trh=0.8 | 0.97/0.30, trh=0.7 | 0.97/0.28, trh=0.7 |
+| XGB | 0.94/0.28, trh=0.7 | 0.97/0.31, trh=0.7 | 0.98/0.32, trh=0.8 | 0.94/0.27, trh=0.6 | 0.96/0.33, trh=0.7 | 0.91/0.27, trh=0.7 |
+
+
 
 
 
