@@ -124,9 +124,16 @@ In the table, the first number is the F1-score for the negative class (conversio
 From the results, we can see that the Decision Tree algorithms such as RF and XGB are more robust for this task. The best F1 score for the positive class we achieved with the RF and the first 2 best features. The order of the best features is shown in the figure bellow:
 ![Alt](figures/best_features.png)
 
-The probability of all test samples you can see by running `main.py` in the console
+The probability of conversions for all test samples you can see by running `main.py` in the console
 
 ## Discussion
+The main problem that classifiers have is to improve recall of the positive class. One of the reasons can be the nature of the dataset. Let's consider the example of the scatter plot between 2 features with sign classes for the original dataset and after undersampling:
+
+**Original dataset**:
+![Alt](figures/full_plot.png)
+
+**Undersampled dataset**:
+![Alt](figures/undersample_plot.png)
 
 
 
