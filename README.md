@@ -104,9 +104,9 @@ During creating `cp` column, it was noticed that in some cases number of convers
 
 - [x] **Classifiers** are built in the `utils.py` file. In this task we consider 4 different classifiers:
 1. Logistic Regression (LR)
-2. k-Nearest Neighbour (KNN)
+2. k-Nearest Neighbors (KNN)
 3. Random Forest (RF)
-4. Extreme Gradiant Boosting (XGB)
+4. Extreme Gradient Boosting (XGB)
 
 During fitting these classifiers Bayesian optimization is applied to tune the hyperparameters of each classifier.
 
