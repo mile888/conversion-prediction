@@ -28,8 +28,6 @@ The dataset consists of three files:
 Tree of the project:
 ```plaintext
 project_root/
-├── .github/workflows/ 
-│   └── main.yaml
 ├── figures/
 │   ├── best_features.png
 │   ├── full_plot.png
@@ -76,7 +74,7 @@ chose the mode:
 7. `ds_homework_sample.csv` - (e.g. `data: "datasets/ds_homework_sample.csv"`)
 8. the nuber of index row from raw dataset - (e.g. `index_row: 1`)
 
-- [x] `main.ipynb` nootebook is used for feature engineering and creating cleaned `train.csv` and `test.csv` datasets
+- [x] `main.ipynb` nootebook is used for data engineering and creating cleaned `train.csv` and `test.csv` datasets
 
 - [x] The **source** folder contains all the important files for solving the tasks of this assignment.
 - `utils.py` contains the code for fitting and optimizing classifiers..
@@ -84,7 +82,43 @@ chose the mode:
 - `train_validate.py` contains pipeline for solving train\validation task. 
 - `predict.py` contains a pipeline for solving this task from the raw dataset.
 
-- [x] The **save_models** consists of the saved models and their parameter files.
+- [x] The **save_models** folder consists of the saved models and their parameter files.
+
+
+## Discussion and Results
+- [x] Data engineering task is done in `main.ipynb`. Important moments during the data engineering task were:
+
+1. Feature `offer_id` has a lot of NaN values. Accordingly, we did not consider this feature at all.
+2. Feature `geo` also has several NaN values, thus we just delete these rows. In this way, we did not influence the dataset, since rows with `geo` NaN values do not have any conversions.
+3. Features such as [`geo`, `os_type`, `os`, `os_version`, `device_type`, `device`, `browser`, `lang`, `proxy`, `netspeed`] are categorical features. Accordingly, we apply LabelEncoder to encode these features.
+4. To create a classification task, we create a new `cr` (conversions rate) column as the division (conversions/impressions), and using the mean of this distribution we categorize class 1 where samples are above the mean or 0 if they are equal to or below the mean. Accordingly, we create a new column `cp` (conversions probability).
+
+**NOTE**:
+During creating `cp` column, it was noticed that in same cases number of conversions is above number of the impressions. Moreover, all rows with zero impressions have one or more conversions. This is debatable and domain knowledge is required for this case in terms of whether these are errors or the number of conversions caused by some external factor. In order to avoid a bad impact on the dataset and later classifiers, we have removed all rows where the conversions are higher than the impressions. 
+
+5. Since the dataset is highly imbalanced, it means that the majority class where no exist conversions is a lot higher than the minority class where conversions occur with some probability, we apply the clustering technique to reduce the number of majority class samples. Concretely, we apply the k-means unsupervised technique to cluster the majority class and thus randomly take several samples from each cluster.
+
+6. In the end, we create cleaned and undersampled train and test datasets
+
+- [x] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
