@@ -107,6 +107,7 @@ During creating `cp` column, it was noticed that in some cases number of convers
 2. k-Nearest Neighbour (KNN)
 3. Random Forest (RF)
 4. Extreme Gradiant Boosting (XGB)
+
 During fitting these classifiers Bayesian optimization is applied to tune the hyperparameters of each classifier.
 
 ## Results
