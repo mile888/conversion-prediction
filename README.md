@@ -109,8 +109,8 @@ During creating `cp` column, it was noticed that in same cases number of convers
 4. Extreme Gradiant Boosting (XGB)
 During fitting these classifiers Bayesian optimization is applied to tune the hyperparameters of each classifier.
 
-## Results and Discussion
-To validate the results of the good accuracy of the conversation probability prediction, we consider F1-score as the metric of the goodnes of the calssifier. F1-score is a harmonic mean of the precission and eracall, and in this case we would like to the best classifiers has good bothe precission and recall. The results are presented in table bellow for each classifier with optimal treshold:
+## Results
+To validate the results of the good accuracy of the conversion probability prediction, we consider `F1-score` as the metric of the efficiency of the classifier. `F1-score` is a harmonic mean of the `precision` and `recall`, and in this case, we would like the best classifiers to have both precision and recall. The results are presented in the table below for each classifier with optimal threshold:
 
 | k best features| 2 | 4 | 8 | 10 | 15 | All |
 |----------|----------|----------|----------|----------|----------|----------|
@@ -119,7 +119,14 @@ To validate the results of the good accuracy of the conversation probability pre
 | RF | 0.96/0.35, trh=0.7 | 0.96/0.32, trh=0.7 | 0.98/0.32, trh=0.7 | 0.98/0.27, trh=0.8 | 0.97/0.30, trh=0.7 | 0.97/0.28, trh=0.7 |
 | XGB | 0.94/0.28, trh=0.7 | 0.97/0.31, trh=0.7 | 0.98/0.32, trh=0.8 | 0.94/0.27, trh=0.6 | 0.96/0.33, trh=0.7 | 0.91/0.27, trh=0.7 |
 
+In the table, the first number is the F1-score for the negative class (conversion does not happen), and the second number for the positive class (conversion happens with 100% probability). `trh` is the optimal threshold for the determined classifier. 
 
+From the results, we can see that the Decision Tree algorithms such as RF and XGB are more robust for this task. The best F1 score for the positive class we achieved with the RF and the first 2 best features. The order of the best features is shown in the figure bellow:
+![Alt](figures/best_features.png)
+
+The probability of all test samples you can see by running `main.py` in the console
+
+## Discussion
 
 
 
