@@ -130,9 +130,11 @@ The probability of conversions for all test samples you can see by running `main
 The main problem that classifiers have is to improve recall of the positive class. One of the reasons can be the nature of the dataset. Let's consider the example of the scatter plot between 2 features with sign classes for the original dataset and after undersampling:
 
 **Original dataset**:
+
 ![Alt](figures/full_plot.png)
 
 **Undersampled dataset**:
+
 ![Alt](figures/undersample_plot.png)
 
 
