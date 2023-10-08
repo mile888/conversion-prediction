@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 
 ## Dataset
-The datasets for this task are available [here](https://drive.google.com/drive/folders/1qOVe9A5fX5D5vNGIuDvlIGCT0mq-PbGF).
+The datasets for this task are available [here](https://drive.google.com/drive/folders/1eH5FLgAMjcMGdd8yHxjnO5IJOOZdJIuv).
 
 The dataset consists of three files:
 1. **ds_homework_sample.csv** - contains a random sample of the work of an advertising network with approximately 100 sites over two weeks. Each line represents data from the conversions and impressions metrics aggregated over the rest attributes. 
