@@ -13,6 +13,8 @@ The required packages can be installed via standard Python package manager:
 ```
 pip install --upgrade pip
 pip install -r requirements.txt
+pip install xgboost
+pip install scikit-optimize
 ```
 
 ## Dataset
